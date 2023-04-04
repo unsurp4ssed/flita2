@@ -9,6 +9,7 @@
 #define MAX_VERTICES 50
 #define OFFSET 50
 
+
 typedef struct coords {
     int x;
     int y;
