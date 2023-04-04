@@ -5,7 +5,7 @@
 #include <stdbool.h>
 #include <math.h>
 #define PI 3.14
-#define FILENAME "C:\\Users\\admin\\CLionProjects\\flita\\dz2\\adjacency_matrix_7.txt"
+#define FILENAME "C:\\Users\\admin\\CLionProjects\\flita\\dz2\\adjacency_matrix_20.txt"
 #define MAX_VERTICES 50
 #define OFFSET 50
 
@@ -57,10 +57,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     wc.hbrBackground = (HBRUSH)(COLOR_BACKGROUND);
     wc.lpszClassName = "MyClass";
     wc.hCursor = LoadCursor(NULL, IDC_ARROW);
-
-    SystemParametersInfoA(SPI_SETFONTSMOOTHING, TRUE, NULL, 0); //antialiasing!!!!!
-    //it doesnt work tho...
-
+    SystemParametersInfoA(SPI_SETFONTSMOOTHING, TRUE, NULL, 0);
     if(!RegisterClass(&wc))
     {
         printf("This Program Requires Windows NT\n");
